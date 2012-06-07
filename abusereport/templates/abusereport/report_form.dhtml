@@ -1,0 +1,17 @@
+{% extends "abusereport/base.dhtml" %}
+{% block content %}
+
+<fieldset id="report">
+
+    <legend>Zgłoszenie Nadużycia</legend>
+    Zgłaszana treść: {{ form.initial.content_type }} 
+    {% with form.initial.target.get_absolute_url as target_url %}
+    <a href="http://{{SITE}}{{ target_url }}">{{ SITE }}{{ target_url }}</a>
+    {% endwith %}
+    <form method="POST" action="." id="reportf">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Zgłoś Nadużycie">
+    </form>
+</fieldset>
+{% endblock %}

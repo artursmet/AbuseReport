@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2>Witaj,</h2>
+<p>
+W serwisie {{ SITE }} pojawił się nowy raport dot. niepoprawnej treści.
+</p>
+<p>
+Szczegóły:<br>
+
+<strong>Zgłoszone przez:</strong> {{ report.author }} <a href="mailto:{{ report.author_email }}">{{ report.author_email }}</a><br>
+<strong>Adres IP:</strong> {{ report.author_ip }} <br>
+<strong>Data:</strong> {{ report.created|date:"j.m.Y H:i" }} <br>
+<strong>Treść do moderacji: </strong><a href="http://{{ SITE }}{{ report.target.get_absolute_url }}">{{ SITE }}{{ report.target.get_absolute_url }}</a>
+</p>
+
+<p>
+    Wiadomość została wygenerowana automatycznie. Nie odpowiadaj na nią.
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+{% extends "abusereport/base.dhtml" %}
+{% block content %}
+<h1 style="text-align: center">Dziękujemy za zgłoszenie</h1>
+<p class="left20px">Postaramy się odpowiedzieć na nie najszybciej jak to będzie możliwe.</p>
+<a href='#' class="close_button" onclick='parent.$.colorbox.close(); return false;'>Zamknij okno</a>
+
+{% endblock %}

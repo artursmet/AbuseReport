@@ -1,0 +1,49 @@
+#report {
+    color: #222222;
+    font-family: Verdana;
+    width: 310px;
+    background: white;
+    border: 5px solid #D7D7CC;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.5em;
+}
+label {
+    display: block;
+}
+textarea {
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    resize: none;
+}
+input[type="text"] {
+    border: 1px solid #CCCCCC;
+    font-size: 25px;
+    padding: 7px;
+}
+
+input[type="submit"] {
+        background: none repeat scroll 0 0 #BC1B00;
+        border: medium none #AA3333;
+        border-radius: 5px 5px 5px 5px;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 5px 20px;
+        text-align: center !important;
+        margin-left: 80px;
+    }
+
+.close_button {
+        background: none repeat scroll 0 0 #BC1B00;
+        border: medium none #AA3333;
+        border-radius: 5px 5px 5px 5px;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 5px 20px;
+        text-align: center !important;
+        margin-left:140px;
+        text-decoration: none;
+    }
+.left20px {
+    margin-left: 20px;
+}
