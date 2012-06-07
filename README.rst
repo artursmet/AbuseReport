@@ -39,9 +39,10 @@ eg.::
         from django.contrib.contenttypes.models import ContentType
         return ContentType.objects.get_for_model(self)
 
-On page with Content add report button via templatetag:
-obj is variable name for Model Instance.
-{{ load abusereport_tags }}
-{% abuse_report_button obj.content_type.id obj.id %}
+On page template with Content add report button via templatetag:
+obj is variable name for Model Instance.::
+
+    {{ load abusereport_tags }}
+    {% abuse_report_button obj.content_type.id obj.id %}
 
 That's it. It should work.
